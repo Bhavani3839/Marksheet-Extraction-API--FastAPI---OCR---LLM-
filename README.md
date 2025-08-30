@@ -5,12 +5,12 @@ It allows you to upload a marksheet (image or PDF) and get structured **JSON out
 
 ---
 ## Demo ##
-# marksheet#
+## marksheet ##
 (![images (3)](https://github.com/user-attachments/assets/fff7f552-fca3-4009-bf22-536638b248de)
 
 
 
-## 🚀 Features
+## 🚀 Features ##
 - Extract:
   - Candidate details (Name, Roll No, Registration No, DOB, etc.)
   - Institution & Board/University info
@@ -21,7 +21,7 @@ It allows you to upload a marksheet (image or PDF) and get structured **JSON out
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Tech Stack ##
 - **FastAPI** (API framework)
 - **EasyOCR** (OCR engine)
 - **img2table** (Table detection & parsing)
@@ -30,7 +30,7 @@ It allows you to upload a marksheet (image or PDF) and get structured **JSON out
 
 ---
 
-## 📂 Project Structure
+## 📂 Project Structure ##
 Marksheet-Extraction-API--FastAPI---OCR---LLM-/
 │── app.py # Main FastAPI app
 │── requirements.txt # Project dependencies
@@ -49,12 +49,13 @@ pip install -r requirements.txt
 
 ## Run the API ##
 API will be available at:
- http://127.0.0.1:8000/docs
+ http://127.0.0.1:5000
  (Swagger UI)
+ 
  ## Example Request (using Python) ##
  import requests
 
-url = "http://127.0.0.1:8000/extract"
+url = http://127.0.0.1:5000/extract
 files = {"file": open("samples/marksheet.jpeg", "rb")}
 response = requests.post(url, files=files)
 

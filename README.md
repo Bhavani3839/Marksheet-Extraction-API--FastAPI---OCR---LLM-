@@ -5,8 +5,8 @@ It allows you to upload a marksheet (image or PDF) and get structured **JSON out
 
 ---
 ## Demo ##
-![Marksheet Example](![images (3)](https://github.com/user-attachments/assets/fff7f552-fca3-4009-bf22-536638b248de)
-)
+(![images (3)](https://github.com/user-attachments/assets/fff7f552-fca3-4009-bf22-536638b248de)
+
 
 
 ## 🚀 Features

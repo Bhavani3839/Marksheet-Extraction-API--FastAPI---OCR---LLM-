@@ -172,7 +172,7 @@ def aptitude():
 def index2():
     return render_template('index_2.html')
 
-# add a new route to return the response.txt filw to the server
+
 @app.route('/response')
 def response():
     return render_template('response.txt')
@@ -206,7 +206,7 @@ def calculate_riasec_scores(responses):
     if len(responses) != len(questions):
         return {"error": "Number of responses does not match the number of questions."}
 
-    # Convert responses to scores
+    
     scores = [int(score) for score in responses.values()]
     total_score = sum(scores)
     if total_score == 0:  # Prevent division by zero
@@ -225,13 +225,13 @@ def calculate_riasec_scores(responses):
 
     # Check if marksheet data is available
     if os.path.exists('selected_columns_data.csv'):
-        # Read the marksheet data from the CSV file
+       
         marksheet_data = pd.read_csv('selected_columns_data.csv')
         
-        # Create the temporary prompt file
+        
         temp_prompt_file = create_temp_prompt(marksheet_data.to_dict(), normalized_scores)
         
-        # Send the prompt to the llama API
+        
         with open(temp_prompt_file, 'r') as file:
             prompt = file.read()
         
@@ -255,7 +255,7 @@ def calculate_riasec_scores(responses):
     
     return normalized_scores
 
-# ... (remaining code remains the same)
+
 
 def create_temp_prompt(marks_data, aptitude_data):
     with tempfile.NamedTemporaryFile(mode='w+', delete=False) as tmp:
